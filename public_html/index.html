@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lets Chat Client - Javascript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div>
+            <div>
+                <textarea id="chat-box" disabled></textarea>
+            </div>
+            <div>
+                <form id="chat-form" action="/chat" method="POST" onsubmit="return false;">
+                    <input type="text" name="body" />
+                    <input type="submit" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
